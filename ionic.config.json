@@ -1,0 +1,7 @@
+{
+  "name": "coinverse",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
