@@ -104,7 +104,3 @@ Coin-Verse/
 
 **Dependências desatualizadas:** rode `npm install` novamente após atualizar a branch.
 
-
-## 📄 Licença
-
-Este projeto é de uso privado (`"private": true`).
