@@ -104,9 +104,6 @@ Coin-Verse/
 
 **Dependências desatualizadas:** rode `npm install` novamente após atualizar a branch.
 
-**Porta em uso:** utilize `ionic serve --port 8101` para trocar a porta padrão.
-
----
 
 ## 📄 Licença
 
