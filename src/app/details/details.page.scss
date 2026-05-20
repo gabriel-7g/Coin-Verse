@@ -1,0 +1,86 @@
+// Centralização e responsividade idêntica à Home
+.main-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+// Banner superior em degradê azul
+.card-topo {
+  background: linear-gradient(135deg, var(--ion-color-primary), #3171e0);
+  border-radius: 20px;
+  padding: 40px 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 25px;
+  box-shadow: 0 8px 20px rgba(var(--ion-color-primary-rgb), 0.2);
+
+  ion-icon {
+    font-size: 3.2rem;
+    margin-bottom: 10px;
+    opacity: 0.9;
+  }
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    margin-top: 5px;
+  }
+}
+
+.sessao-titulo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-left: 5px;
+  margin-bottom: 15px;
+  color: var(--ion-color-dark);
+}
+
+.lista-detalhes {
+  background: transparent; // Remove fundos cinzas padrões da lista inteira
+}
+
+// CORREÇÃO DOS VALORES BRANCOS: Forçando as cores corretas no item do Ionic
+.item-detalhe {
+  --background: var(--ion-card-background, #ffffff); // Fundo igual ao dos cards da Home
+  --border-radius: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+  
+
+  .moeda-sigla {
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--ion-color-dark) !important; 
+  }
+
+  .moeda-subtexto {
+    font-size: 0.85rem;
+    color: var(--ion-color-medium);
+  }
+
+  // Define o valor da direita com o verde sucesso do CoinVerse
+  .valor-destaque {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--ion-color-success, #2dd36f) !important;
+  }
+}
+
+.info-footer {
+  margin-top: 25px;
+  ion-card {
+    margin: 0;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    text-align: center;
+    color: var(--ion-color-medium);
+  }
+}

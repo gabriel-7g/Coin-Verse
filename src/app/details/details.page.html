@@ -1,0 +1,42 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home" text="Voltar" color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalhes: {{ codigoMoeda }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="main-container">
+    
+    <div class="card-topo">
+      <ion-icon name="trending-up-outline"></ion-icon>
+      <h1>1 {{ codigoMoeda }}</h1>
+      <p>Análise de conversão baseada em mercado real</p>
+    </div>
+
+    <h3 class="sessao-titulo">Conversões de Destaque</h3>
+
+    <ion-list lines="none" class="lista-detalhes">
+      <ion-item *ngFor="let m of moedasDestaque" class="item-detalhe">
+        <ion-label>
+          <h2 class="moeda-sigla">{{ m.sigla }}</h2>
+          <p class="moeda-subtexto">Valor unitário convertido</p>
+        </ion-label>
+        <ion-note slot="end" class="valor-destaque">
+          {{ m.valor | number:'1.2-4' }}
+        </ion-note>
+      </ion-item>
+    </ion-list>
+
+    <div class="info-footer">
+      <ion-card color="light">
+        <ion-card-content>
+          Os valores apresentados são taxas de câmbio comerciais fornecidas pela ExchangeRate-API.
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+  </div>
+</ion-content>
