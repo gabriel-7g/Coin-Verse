@@ -53,43 +53,6 @@ A aplicação estará disponível em `http://localhost:8100` (Ionic) ou `http://
 
 ---
 
-## 📱 Rodando no dispositivo / emulador (Capacitor)
-
-O projeto utiliza **Capacitor 8** para build nativo.
-
-### Android
-
-```bash
-# Gera o build da aplicação
-ionic build
-
-# Sincroniza com a plataforma Android
-npx cap sync android
-
-# Abre no Android Studio
-npx cap open android
-```
-
-> Certifique-se de ter o [Android Studio](https://developer.android.com/studio) instalado.
-
-### iOS
-
-```bash
-ionic build
-npx cap sync ios
-npx cap open ios
-```
-
-> Requer macOS com [Xcode](https://developer.apple.com/xcode/) instalado.
-
----
-
-## 🏗️ Build de produção
-
-```bash
-ionic build --prod
-```
-
 Os arquivos gerados estarão na pasta `www/`.
 
 ---
