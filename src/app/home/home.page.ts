@@ -3,8 +3,6 @@ import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common'; 
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-
-// IMPORTS DOS NOVOS REQUISITOS
 import { CurrencyService } from '../services/currency.service';
 import { TruncatePipe } from '../pipes/truncate-pipe';
 import { HighlightDirective } from '../directives/highlight';
@@ -29,14 +27,13 @@ export class HomePage implements OnInit {
     { codigo: 'EUR', nome: 'Euro' },
     { codigo: 'GBP', nome: 'Libra Esterlina' },
     { codigo: 'JPY', nome: 'Iene Japonês' },
-    { codigo: 'BTC', nome: 'Bitcoin' }
   ];
 
   private traducoes: { [key: string]: string } = {
-    'United States': 'Estados Unidos', 'Dollar': 'Dólar', 'Brazilian': 'Brasileiro',
+    'United States': 'Estados Unidos', 'Dollar': 'Dólar', 'Brazilian': 'Brasil',
     'Real': 'Real', 'Eurozone': 'Zona do Euro', 'United Kingdom': 'Reino Unido',
     'Pound': 'Libra', 'Sterling': 'Esterlina', 'Japanese': 'Japonês', 'Yen': 'Iene',
-    'Argentine': 'Argentino', 'Peso': 'Peso', 'Canadian': 'Canadense'
+    'Argentine': 'Argentina', 'Peso': 'Peso', 'Canadian': 'Canadense', 'Chinese': 'China',
   };
 
   constructor(private currencyService: CurrencyService) {}
